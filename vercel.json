@@ -1,5 +1,12 @@
 {
-  "version": 2,
-  "cleanUrls": true,
-  "trailingSlash": false
+  "rewrites": [
+    {
+      "source": "/app",
+      "destination": "https://script.google.com/macros/s/AKfycbyIhYZgLQDHztCqdUCiAdRRcuZGtt1c1gpRLrw_b8oHbok-TdcBY4vuRFnerrrSCrY/exec"
+    },
+    {
+      "source": "/app/:path*",
+      "destination": "https://script.google.com/macros/s/AKfycbyIhYZgLQDHztCqdUCiAdRRcuZGtt1c1gpRLrw_b8oHbok-TdcBY4vuRFnerrrSCrY/exec/:path*"
+    }
+  ]
 }
